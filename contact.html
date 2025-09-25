@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact - My Site</title>
+  <title>Contact - YourBusiness</title>
+  <meta name="description" content="Get in touch via form, email, or WhatsApp.">
+  <link rel="icon" href="/assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container">
-      <a class="logo" href="/">MySite</a>
+      <a class="logo" href="/"><img src="/assets/img/logo.svg" alt="YourBusiness" /><span>YourBusiness</span></a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -18,39 +23,55 @@
       </button>
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
         <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        <li><a href="https://wa.me/923001234567?text=Hi%20YourBusiness%2C%20I%20am%20interested" target="_blank" rel="noopener">WhatsApp</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
     <h1>Contact Us</h1>
-    <form id="contact-form" novalidate>
-      <div class="form-row">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required placeholder="Your name" />
-        <p class="error" data-error-for="name"></p>
-      </div>
-      <div class="form-row">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" />
-        <p class="error" data-error-for="email"></p>
-      </div>
-      <div class="form-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
-        <p class="error" data-error-for="message"></p>
-      </div>
-      <button class="btn primary" type="submit">Send</button>
-      <p id="form-status" role="status" aria-live="polite"></p>
-    </form>
+    <div class="contact-grid">
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+          <p class="error" data-error-for="name"></p>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          <p class="error" data-error-for="email"></p>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+          <p class="error" data-error-for="message"></p>
+        </div>
+        <button class="btn primary" type="submit">Send</button>
+        <a class="btn success" style="margin-left:8px" href="https://wa.me/923001234567?text=Hi%20YourBusiness%2C%20I%20am%20interested" target="_blank" rel="noopener">WhatsApp</a>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="info-panel">
+        <h2>Reach us</h2>
+        <ul class="info-list">
+          <li><strong>Phone:</strong> <a href="https://wa.me/923001234567" target="_blank" rel="noopener">+92 300 123 4567</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@yourbusiness.com">hello@yourbusiness.com</a></li>
+          <li><strong>Hours:</strong> Mon–Sat, 10am–7pm</li>
+          <li><strong>Address:</strong> Your City, Pakistan</li>
+        </ul>
+      </aside>
+    </div>
   </main>
+
+  <a class="wa-float" href="https://wa.me/923001234567?text=Hi%20YourBusiness%2C%20I%20am%20interested" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> MySite. All rights reserved.</p>
+      <p>© <span id="year"></span> YourBusiness. All rights reserved.</p>
     </div>
   </footer>
 </body>

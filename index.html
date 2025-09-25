@@ -3,28 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Site</title>
-  <meta name="description" content="Modern responsive website">
+  <title>YourBusiness — Professional Services</title>
+  <meta name="description" content="Personal business website for services, pricing, and contact.">
+  <link rel="icon" href="/assets/img/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
+  <meta property="og:title" content="YourBusiness — Professional Services">
+  <meta property="og:description" content="Fast, modern websites and services for your business.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="/assets/img/logo.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="YourBusiness — Professional Services">
+  <meta name="twitter:description" content="Fast, modern websites and services for your business.">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "YourBusiness",
+    "url": "https://example.com",
+    "logo": "/assets/img/logo.svg",
+    "image": "/assets/img/logo.svg",
+    "telephone": "+923001234567",
+    "address": {"@type": "PostalAddress", "addressLocality": "Your City", "addressCountry": "PK"},
+    "sameAs": ["https://wa.me/923001234567"]
+  }</script>
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar container">
-      <a class="logo" href="/">MySite</a>
+      <a class="logo" href="/"><img src="/assets/img/logo.svg" alt="YourBusiness" /><span>YourBusiness</span></a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
+        <li><a href="/" aria-current="page">Home</a></li>
         <li><a href="/services.html">Services</a></li>
+        <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        <li><a href="https://wa.me/923001234567?text=Hi%20YourBusiness%2C%20I%20am%20interested" target="_blank" rel="noopener">WhatsApp</a></li>
       </ul>
     </nav>
   </header>
@@ -32,38 +53,58 @@
   <main>
     <section class="hero container">
       <div class="hero-content">
-        <h1>Build your presence online</h1>
-        <p>Fast, responsive, and modern websites tailored to your business.</p>
+        <h1>Grow your business online</h1>
+        <p>Web design, landing pages, and optimization tailored for personal businesses.</p>
         <div class="cta">
-          <a class="btn primary" href="/services.html">Get Started</a>
-          <a class="btn" href="/contact.html">Contact Us</a>
+          <a class="btn primary" href="/services.html">View Services</a>
+          <a class="btn" href="https://wa.me/923001234567?text=Hi%20YourBusiness%2C%20I%20am%20interested" target="_blank" rel="noopener">WhatsApp us</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true"></div>
     </section>
 
-    <section class="features container">
-      <h2>What you get</h2>
+    <section class="features container services">
+      <h2>Services</h2>
       <div class="grid">
         <article class="card">
-          <h3>Responsive Design</h3>
-          <p>Looks great on phones, tablets, and desktops.</p>
+          <h3>Landing Pages</h3>
+          <p>High-converting pages with clear CTAs and analytics.</p>
         </article>
         <article class="card">
-          <h3>SEO Friendly</h3>
-          <p>Semantic HTML and metadata to help you rank.</p>
+          <h3>Business Websites</h3>
+          <p>Multi-page sites with about, services, and contact.</p>
         </article>
         <article class="card">
-          <h3>Performance</h3>
-          <p>Optimized assets and clean code for speed.</p>
+          <h3>Performance & SEO</h3>
+          <p>Speed improvements and on-page SEO best practices.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2>What clients say</h2>
+      <div class="grid">
+        <blockquote class="quote">
+          <p>“Professional and quick. My leads doubled.”</p>
+          <p class="author">— A. Khan</p>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Clean design, super fast website.”</p>
+          <p class="author">— S. Ahmed</p>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Great communication and results.”</p>
+          <p class="author">— R. Malik</p>
+        </blockquote>
       </div>
     </section>
   </main>
 
+  <a class="wa-float" href="https://wa.me/923001234567?text=Hi%20YourBusiness%2C%20I%20am%20interested" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> MySite. All rights reserved.</p>
+      <p>© <span id="year"></span> YourBusiness. All rights reserved.</p>
     </div>
   </footer>
 </body>
