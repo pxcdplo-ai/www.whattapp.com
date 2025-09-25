@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Site</title>
+  <meta name="description" content="Modern responsive website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="/">MySite</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Build your presence online</h1>
+        <p>Fast, responsive, and modern websites tailored to your business.</p>
+        <div class="cta">
+          <a class="btn primary" href="/services.html">Get Started</a>
+          <a class="btn" href="/contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <section class="features container">
+      <h2>What you get</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Responsive Design</h3>
+          <p>Looks great on phones, tablets, and desktops.</p>
+        </article>
+        <article class="card">
+          <h3>SEO Friendly</h3>
+          <p>Semantic HTML and metadata to help you rank.</p>
+        </article>
+        <article class="card">
+          <h3>Performance</h3>
+          <p>Optimized assets and clean code for speed.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
