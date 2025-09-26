@@ -10,6 +10,23 @@
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
   }
+  // Avatar lightbox
+  const avatar = document.querySelector('.profile-avatar img');
+  const lightbox = document.getElementById('avatar-lightbox');
+  if (avatar && lightbox) {
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    avatar.addEventListener('click', () => {
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+    });
+    const close = () => {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+    };
+    closeBtn && closeBtn.addEventListener('click', close);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
 
   const form = document.getElementById('contact-form');
   if (form) {
