@@ -34,6 +34,7 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: center; padding: 56px 0; }
+.hero.one-col { grid-template-columns: 1fr; }
 .hero h1 { font-size: 44px; margin: 0 0 12px; }
 .hero p { color: var(--muted); margin: 0 0 24px; }
 .hero-visual { height: 320px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 24px; filter: drop-shadow(0 20px 40px rgba(108,140,255,0.25)); }
