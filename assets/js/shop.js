@@ -18,7 +18,9 @@
     try {
       const res = await fetch('./assets/data/products.json');
       const products = await res.json();
-      container.innerHTML = products.map(p => `
+      let current = products.slice();
+      function render(list){
+        container.innerHTML = list.map(p => `
         <article class="product-card">
           <img src="${p.image}" alt="${p.name}">
           <div class="body">
@@ -30,6 +32,16 @@
           </div>
         </article>
       `).join('');
+      }
+      render(current);
+      const search = document.getElementById('search-box');
+      if (search) {
+        search.addEventListener('input', () => {
+          const q = search.value.trim().toLowerCase();
+          current = products.filter(p => p.name.toLowerCase().includes(q));
+          render(current);
+        });
+      }
       container.addEventListener('click', (e) => {
         const btn = e.target.closest('[data-add]');
         if (!btn) return;
