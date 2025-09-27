@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart - MEER</title>
+  <link rel="icon" href="./assets/img/logo.svg">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/main.js"></script>
+  <script defer src="./assets/js/shop.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Your cart and checkout.">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="./"><img src="./assets/img/logo.svg" alt="MEER" /><span>MEER</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="./">HOME</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="cart.html" aria-current="page">CART <span id="cart-count" class="badge">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <div class="cart">
+      <div id="cart-list" class="cart-list"></div>
+      <div class="cart-summary">
+        <strong>Total: <span id="cart-total">0</span></strong>
+        <a id="checkout-wa" class="btn success" target="_blank" rel="noopener">Checkout on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MEER. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

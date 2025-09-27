@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - MEER</title>
+  <link rel="icon" href="./assets/img/logo.svg">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/main.js"></script>
+  <script defer src="./assets/js/shop.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Browse products and add to cart.">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="./"><img src="./assets/img/logo.svg" alt="MEER" /><span>MEER</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="./">HOME</a></li>
+        <li><a href="products.html" aria-current="page">PRODUCTS</a></li>
+        <li><a href="cart.html">CART <span id="cart-count" class="badge">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="products-header">
+      <h1>Products</h1>
+      <a class="btn" href="cart.html">Go to Cart <span id="cart-count-2" class="badge">0</span></a>
+    </div>
+    <div id="products" class="products-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MEER. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

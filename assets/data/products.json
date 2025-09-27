@@ -1,0 +1,8 @@
+[
+  {"id":"p1","name":"Classic Tee","price":799,"image":"https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop"},
+  {"id":"p2","name":"Hoodie","price":1999,"image":"https://images.unsplash.com/photo-1520975979642-62ad59ae16fe?q=80&w=800&auto=format&fit=crop"},
+  {"id":"p3","name":"Cap","price":499,"image":"https://images.unsplash.com/photo-1520975661595-645a2dbd7b33?q=80&w=800&auto=format&fit=crop"},
+  {"id":"p4","name":"Backpack","price":2499,"image":"https://images.unsplash.com/photo-1514477917009-389c76a86b68?q=80&w=800&auto=format&fit=crop"},
+  {"id":"p5","name":"Sneakers","price":3999,"image":"https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop"},
+  {"id":"p6","name":"Watch","price":2999,"image":"https://images.unsplash.com/photo-1518444028785-8f3e39655b78?q=80&w=800&auto=format&fit=crop"}
+]
