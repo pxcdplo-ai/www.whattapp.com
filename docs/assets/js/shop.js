@@ -16,7 +16,7 @@
     const container = document.getElementById('products');
     if (!container) return;
     try {
-      const res = await fetch('./assets/data/products.json');
+      const res = await fetch('./assets/data/products.json?v=' + Date.now());
       const products = await res.json();
       let current = products.slice();
       function render(list){
