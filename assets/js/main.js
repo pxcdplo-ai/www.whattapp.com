@@ -56,6 +56,34 @@
       form.reset();
     });
   }
+  // Theme toggle
+  const THEME_KEY = 'pref-theme';
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+  };
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved === 'light' || saved === 'dark') applyTheme(saved);
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem(THEME_KEY, next);
+    });
+  }
+  // Smooth scroll for same-page links
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute('href');
+    if (!id || id === '#') return;
+    const target = document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.pushState(null, '', id);
+  });
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
