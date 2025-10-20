@@ -4,6 +4,7 @@
 html,body{height:100%}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--text);font-family:Poppins,Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 800px at 80% -20%, rgba(255,0,87,0.08), transparent), radial-gradient(900px 600px at 10% -10%, rgba(255,0,87,0.06), transparent), linear-gradient(180deg, rgba(11,15,23,0.9), rgba(11,15,23,1)), #0b0f17}
+h1,h2,h3{font-family:Montserrat,Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;letter-spacing:.3px}
 img{max-width:100%;display:block}
 .container{max-width:1140px;margin:0 auto;padding:0 16px}
 
@@ -18,6 +19,11 @@ img{max-width:100%;display:block}
 .nav-links a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
 .nav-links a:hover,.nav-links a[aria-current="page"]{color:var(--text);background:rgba(255,255,255,0.06)}
 .nav-links .buy{background:var(--pink);color:#0b0f17;border:1px solid #e0004c}
+/* Social icon color override */
+.icon{display:inline-block;width:22px;height:22px}
+.icon-github{mask:url('../img/icons/social/github.svg') center/contain no-repeat;background:var(--pink)}
+.icon-instagram{mask:url('../img/icons/social/instagram.svg') center/contain no-repeat;background:var(--pink)}
+.icon-linkedin{mask:url('../img/icons/social/linkedin.svg') center/contain no-repeat;background:var(--pink)}
 
 /* Buttons */
 .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--border);color:var(--text);text-decoration:none;background:rgba(255,255,255,0.06);transition:transform .15s ease, box-shadow .2s ease}
@@ -41,6 +47,7 @@ img{max-width:100%;display:block}
 .cards{grid-template-columns:repeat(3,1fr)}
 .card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px;transition:transform .2s ease,border-color .2s ease}
 .card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,0.18)}
+.card.glass{background:rgba(255,255,255,0.04);backdrop-filter:blur(10px);border-color:rgba(255,255,255,0.12);box-shadow:0 10px 40px rgba(255,0,87,0.05)}
 
 /* Icon rows */
 .icon-row{display:flex;flex-wrap:wrap;gap:10px}
