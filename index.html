@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muzamil Mir — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Muzamil Mir — creativity, coding, and innovation.">
+  <meta property="og:title" content="Muzamil Mir — Developer Portfolio">
+  <meta property="og:description" content="Dark elegant portfolio inspired by INBIO with pink accents.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ff0057">
+  <link rel="icon" href="./assets/img/icons/skills/react.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="#home"><span><strong>M</strong>uzamil</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn buy" href="#contact">Buy Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero reveal">
+      <div>
+        <p class="welcome">Welcome to my world</p>
+        <h1>Hi, I’m Muzamil Mir, <span class="typing" id="typing"></span></h1>
+        <p class="subtitle">I blend creativity, coding, and innovation to craft elegant digital experiences that are fast, responsive, and delightful to use.</p>
+        <div class="cta">
+          <a class="btn pink" href="#contact">Hire Me</a>
+          <a class="btn" href="#portfolio">See Portfolio</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/photo.jpg" alt="Professional portrait" style="width:100%;height:100%;object-fit:cover;opacity:.9">
+      </div>
+    </section>
+
+    <section id="features" class="section reveal">
+      <h2>Find With Me</h2>
+      <div class="icon-row">
+        <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/img/icons/social/github.svg" alt="GitHub"></a>
+        <a class="icon-btn" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/icons/social/instagram.svg" alt="Instagram"></a>
+        <a class="icon-btn" href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/img/icons/social/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Best Skill On</h2>
+      <div class="icon-row">
+        <div class="skill" title="HTML5"><img src="assets/img/icons/skills/html5.svg" alt="HTML5"></div>
+        <div class="skill" title="CSS3"><img src="assets/img/icons/skills/css3.svg" alt="CSS3"></div>
+        <div class="skill" title="JavaScript"><img src="assets/img/icons/skills/javascript.svg" alt="JavaScript"></div>
+        <div class="skill" title="React"><img src="assets/img/icons/skills/react.svg" alt="React" style="width:32px"></div>
+        <div class="skill" title="Python"><img src="assets/img/icons/skills/python.svg" alt="Python" style="width:32px"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section reveal">
+      <h2>Portfolio</h2>
+      <div class="grid cards">
+        <div class="card">Coming soon</div>
+        <div class="card">Coming soon</div>
+        <div class="card">Coming soon</div>
+      </div>
+    </section>
+
+    <section id="resume" class="section reveal">
+      <h2>Resume</h2>
+      <div class="card">Add your experience and education here.</div>
+    </section>
+
+    <section id="clients" class="section reveal">
+      <h2>Clients</h2>
+      <div class="card">Logos and testimonials coming soon.</div>
+    </section>
+
+    <section id="pricing" class="section reveal">
+      <h2>Pricing</h2>
+      <div class="grid cards">
+        <div class="card"><strong>Starter</strong><br>₹14,999</div>
+        <div class="card"><strong>Business</strong><br>₹39,999</div>
+        <div class="card"><strong>Pro</strong><br>₹69,999</div>
+      </div>
+    </section>
+
+    <section id="blog" class="section reveal">
+      <h2>Blog</h2>
+      <div class="card">Articles coming soon.</div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <form id="contact-form" class="card" style="max-width:560px">
+        <div class="form-row"><label for="name">Name</label><input id="name" type="text" placeholder="Your name"></div>
+        <div class="form-row"><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com"></div>
+        <div class="form-row"><label for="message">Message</label><textarea id="message" rows="4" placeholder="Tell me about your project"></textarea></div>
+        <button class="btn pink" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Muzamil Mir. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
